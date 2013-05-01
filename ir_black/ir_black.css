@@ -38,6 +38,7 @@ body {}
 .line[alternate=odd] {}
 
 .line[highlight=true] {
+  background-color: #444;
   border-bottom: solid 1px #CDF92A;
   color: #FC7E5C;
 }
@@ -51,7 +52,7 @@ body {}
 /* nickname for text messages */
 .sender[type=myself] { color: #666; }
 .sender[type=normal] { color: #96CBFE; }
-.sender[type=normal] { color: #000; }
+/*
 .sender[type=normal][colornumber='0'] { color: #C00; }
 .sender[type=normal][colornumber='1'] { color: #CC0; }
 .sender[type=normal][colornumber='2'] { color: #C80; }
@@ -68,12 +69,13 @@ body {}
 .sender[type=normal][colornumber='13'] { color: #80C; }
 .sender[type=normal][colornumber='14'] { color: #8CC; }
 .sender[type=normal][colornumber='15'] { color: #880; }
+*/
 
 .sender[type=myself] { color: #DFDFFE; }
 
 .message[type=privmsg] {}
-.message[type=notice] { color: #AE8500; }
-.message[type=action] { color: #FFA500;}
+.message[type=notice] { color: #6E6E6E; }
+.message[type=action] { color: #6E6E6E;}
 
 .message[type=system], .message[type=join], .message[type=part], .message[type=kick],
 .message[type=quit], .message[type=kill], .message[type=nick], .message[type=mode],
