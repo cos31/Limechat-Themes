@@ -13,7 +13,7 @@
   Magenta   #FF73FD     #FF9CFE
   Cyan      #C6C5FE     #DFDFFE
   White     #EEEEEE     #FFFFFF
-
+  Orange    #FFA500     #FFC534
 */
 
 html {
@@ -29,8 +29,8 @@ body {}
 .address {}
 .highlight {
   font-weight: normal;
-  color: #7C7C7C;
-  background-color: #FFFFB6;
+  color: #FC7E5C;
+  background-color: #4D794A;
 }
 
 .line {}
@@ -38,8 +38,8 @@ body {}
 .line[alternate=odd] {}
 
 .line[highlight=true] {
-  background-color: #FFFFB6;
-  color: #7C7C7C;
+  border-bottom: solid 1px #CDF92A;
+  color: #FC7E5C;
 }
 
 /* Handle the overload of non important messages by ignoring them */
@@ -48,12 +48,32 @@ body {}
 .time { color: #FFFFCB; }
 .place { color: #96CBFE; }
 
+/* nickname for text messages */
+.sender[type=myself] { color: #666; }
 .sender[type=normal] { color: #96CBFE; }
+.sender[type=normal] { color: #000; }
+.sender[type=normal][colornumber='0'] { color: #C00; }
+.sender[type=normal][colornumber='1'] { color: #CC0; }
+.sender[type=normal][colornumber='2'] { color: #C80; }
+.sender[type=normal][colornumber='3'] { color: #0C0; }
+.sender[type=normal][colornumber='4'] { color: #080; }
+.sender[type=normal][colornumber='5'] { color: #88C; }
+.sender[type=normal][colornumber='6'] { color: #8C0; }
+.sender[type=normal][colornumber='7'] { color: #800; }
+.sender[type=normal][colornumber='8'] { color: #C0C; }
+.sender[type=normal][colornumber='9'] { color: #CC8; }
+.sender[type=normal][colornumber='10'] { color: #C8C; }
+.sender[type=normal][colornumber='11'] { color: #0CC; }
+.sender[type=normal][colornumber='12'] { color: #08C; }
+.sender[type=normal][colornumber='13'] { color: #80C; }
+.sender[type=normal][colornumber='14'] { color: #8CC; }
+.sender[type=normal][colornumber='15'] { color: #880; }
+
 .sender[type=myself] { color: #DFDFFE; }
 
 .message[type=privmsg] {}
-.message[type=notice] { color: #4E4E4E; }
-.message[type=action] { color: #4E4E4E;}
+.message[type=notice] { color: #AE8500; }
+.message[type=action] { color: #FFA500;}
 
 .message[type=system], .message[type=join], .message[type=part], .message[type=kick],
 .message[type=quit], .message[type=kill], .message[type=nick], .message[type=mode],
